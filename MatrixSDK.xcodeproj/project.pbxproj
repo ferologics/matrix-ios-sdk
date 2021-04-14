@@ -1052,12 +1052,6 @@
 		AEA3A5EA24D9C30D00F851FE /* MatrixSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C6F93219DD814400EA4E9C /* MatrixSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEA3A5FE24D9C39D00F851FE /* MXCallKitConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 92634B801EF2E3C400DB9F60 /* MXCallKitConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEA3A5FF24D9C3A400F851FE /* MXCallKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9274AFE61EE580240009BEB6 /* MXCallKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEA3A60024D9C63500F851FE /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A18824D9C0EA00F851FE /* GZIP.framework */; };
-		AEA3A60224D9C63500F851FE /* libbase58.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A18924D9C0EA00F851FE /* libbase58.framework */; };
-		AEA3A60424D9C63500F851FE /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A18724D9C0EA00F851FE /* AFNetworking.framework */; };
-		AEA3A72F24D9EB8200F851FE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A72D24D9EB8100F851FE /* Realm.framework */; };
-		AEA3A73124D9EB8200F851FE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A72E24D9EB8100F851FE /* RealmSwift.framework */; };
-		AEA3A80224DA002900F851FE /* OLMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA3A80124DA002900F851FE /* OLMKit.framework */; platformFilter = ios; };
 		AEA3A84824DA17C300F851FE /* MXAggregationPaginatedResponse_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B176B25023EB03E3001879C6 /* MXAggregationPaginatedResponse_Private.h */; };
 		AEA3A84924DA9CDA00F851FE /* MXRealmHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B146D47021A5939000D8C2C6 /* MXRealmHelper.h */; };
 		AEA3A84A24DA9D9200F851FE /* MXRoomNameStringsLocalizable.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BA86AB21529AE3008F277E /* MXRoomNameStringsLocalizable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1699,6 +1693,18 @@
 		EB1714F425751B2400A9F8B5 /* MXAes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A23A73D256D322C00B9D00F /* MXAes.m */; };
 		EB1714FA25751B5D00A9F8B5 /* MXBaseProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 323F877A25546170009E9E67 /* MXBaseProfiler.m */; };
 		EB17150025751B6000A9F8B5 /* MXTaskProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 323F878C25553D84009E9E67 /* MXTaskProfile.m */; };
+		EB8AAE44260B4A4F004D53C7 /* OLMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE43260B4A4F004D53C7 /* OLMKit.xcframework */; };
+		EB8AAE45260B4A4F004D53C7 /* OLMKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE43260B4A4F004D53C7 /* OLMKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB8AAE4C260B4A5F004D53C7 /* libbase58.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE4B260B4A5F004D53C7 /* libbase58.xcframework */; };
+		EB8AAE4D260B4A5F004D53C7 /* libbase58.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE4B260B4A5F004D53C7 /* libbase58.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB8AAE53260B4A68004D53C7 /* GZIP.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE52260B4A68004D53C7 /* GZIP.xcframework */; };
+		EB8AAE54260B4A68004D53C7 /* GZIP.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE52260B4A68004D53C7 /* GZIP.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB8AAE5A260B4A75004D53C7 /* AFNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE59260B4A75004D53C7 /* AFNetworking.xcframework */; };
+		EB8AAE5B260B4A75004D53C7 /* AFNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8AAE59260B4A75004D53C7 /* AFNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBDD059F260E1A7200AA38EE /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDD059D260E1A7200AA38EE /* Realm.xcframework */; };
+		EBDD05A0260E1A7200AA38EE /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBDD059D260E1A7200AA38EE /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBDD05A1260E1A7200AA38EE /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDD059E260E1A7200AA38EE /* RealmSwift.xcframework */; };
+		EBDD05A2260E1A7200AA38EE /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBDD059E260E1A7200AA38EE /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC619D9224DD834B00663A80 /* MXPushGatewayRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC619D9024DD834B00663A80 /* MXPushGatewayRestClient.m */; };
 		EC619D9324DD834B00663A80 /* MXPushGatewayRestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EC619D9124DD834B00663A80 /* MXPushGatewayRestClient.h */; };
 		ECAE7AEC24ED75F1002FA813 /* HTTPAdditionalHeadersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAE7AEB24ED75F1002FA813 /* HTTPAdditionalHeadersTests.m */; };
@@ -1753,6 +1759,22 @@
 			dstSubfolderSpec = 7;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8AAE46260B4A4F004D53C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB8AAE54260B4A68004D53C7 /* GZIP.xcframework in Embed Frameworks */,
+				EBDD05A2260E1A7200AA38EE /* RealmSwift.xcframework in Embed Frameworks */,
+				EB8AAE45260B4A4F004D53C7 /* OLMKit.xcframework in Embed Frameworks */,
+				EB8AAE5B260B4A75004D53C7 /* AFNetworking.xcframework in Embed Frameworks */,
+				EB8AAE4D260B4A5F004D53C7 /* libbase58.xcframework in Embed Frameworks */,
+				EBDD05A0260E1A7200AA38EE /* Realm.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -2374,6 +2396,12 @@
 		D507DA07A90048BDE70C6795 /* Pods-MatrixSDKTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixSDKTests-iOS.debug.xcconfig"; path = "Target Support Files/Pods-MatrixSDKTests-iOS/Pods-MatrixSDKTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCDFA3ABCED99811646ED8B6 /* Pods-SDK-MatrixSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK-MatrixSDK-iOS.release.xcconfig"; path = "Target Support Files/Pods-SDK-MatrixSDK-iOS/Pods-SDK-MatrixSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E9B11A2D50665ADBB4B2F5C5 /* Pods-MatrixSDK-MatrixSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixSDK-MatrixSDK-iOS.release.xcconfig"; path = "Target Support Files/Pods-MatrixSDK-MatrixSDK-iOS/Pods-MatrixSDK-MatrixSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EB8AAE43260B4A4F004D53C7 /* OLMKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OLMKit.xcframework; path = Carthage/Build/OLMKit.xcframework; sourceTree = "<group>"; };
+		EB8AAE4B260B4A5F004D53C7 /* libbase58.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbase58.xcframework; path = Carthage/Build/libbase58.xcframework; sourceTree = "<group>"; };
+		EB8AAE52260B4A68004D53C7 /* GZIP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GZIP.xcframework; path = Carthage/Build/GZIP.xcframework; sourceTree = "<group>"; };
+		EB8AAE59260B4A75004D53C7 /* AFNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AFNetworking.xcframework; path = Carthage/Build/AFNetworking.xcframework; sourceTree = "<group>"; };
+		EBDD059D260E1A7200AA38EE /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Carthage/Build/Realm.xcframework; sourceTree = "<group>"; };
+		EBDD059E260E1A7200AA38EE /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Carthage/Build/RealmSwift.xcframework; sourceTree = "<group>"; };
 		EC619D9024DD834B00663A80 /* MXPushGatewayRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPushGatewayRestClient.m; sourceTree = "<group>"; };
 		EC619D9124DD834B00663A80 /* MXPushGatewayRestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPushGatewayRestClient.h; sourceTree = "<group>"; };
 		ECAE7AEB24ED75F1002FA813 /* HTTPAdditionalHeadersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPAdditionalHeadersTests.m; sourceTree = "<group>"; };
@@ -2422,13 +2450,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA3A91624DB327900F851FE /* AVFoundation.framework in Frameworks */,
+				EB8AAE53260B4A68004D53C7 /* GZIP.xcframework in Frameworks */,
 				AEA3A90E24DB0A8800F851FE /* CallKit.framework in Frameworks */,
-				AEA3A72F24D9EB8200F851FE /* Realm.framework in Frameworks */,
-				AEA3A73124D9EB8200F851FE /* RealmSwift.framework in Frameworks */,
-				AEA3A60224D9C63500F851FE /* libbase58.framework in Frameworks */,
-				AEA3A60424D9C63500F851FE /* AFNetworking.framework in Frameworks */,
-				AEA3A80224DA002900F851FE /* OLMKit.framework in Frameworks */,
-				AEA3A60024D9C63500F851FE /* GZIP.framework in Frameworks */,
+				EBDD05A1260E1A7200AA38EE /* RealmSwift.xcframework in Frameworks */,
+				EB8AAE44260B4A4F004D53C7 /* OLMKit.xcframework in Frameworks */,
+				EBDD059F260E1A7200AA38EE /* Realm.xcframework in Frameworks */,
+				EB8AAE4C260B4A5F004D53C7 /* libbase58.xcframework in Frameworks */,
+				EB8AAE5A260B4A75004D53C7 /* AFNetworking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2492,6 +2520,12 @@
 		10FA4A5252784B85B27DEA5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBDD059D260E1A7200AA38EE /* Realm.xcframework */,
+				EBDD059E260E1A7200AA38EE /* RealmSwift.xcframework */,
+				EB8AAE59260B4A75004D53C7 /* AFNetworking.xcframework */,
+				EB8AAE52260B4A68004D53C7 /* GZIP.xcframework */,
+				EB8AAE4B260B4A5F004D53C7 /* libbase58.xcframework */,
+				EB8AAE43260B4A4F004D53C7 /* OLMKit.xcframework */,
 				AEA3A91524DB327800F851FE /* AVFoundation.framework */,
 				AEA3A90D24DB0A8700F851FE /* CallKit.framework */,
 				AEA3A80124DA002900F851FE /* OLMKit.framework */,
@@ -4739,6 +4773,7 @@
 				AEA3A17B24D9C0C500F851FE /* Sources */,
 				AEA3A17C24D9C0C500F851FE /* Frameworks */,
 				AEA3A17D24D9C0C500F851FE /* Resources */,
+				EB8AAE46260B4A4F004D53C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
