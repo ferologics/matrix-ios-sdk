@@ -1374,34 +1374,37 @@ NSString *const kMXRoomInitialSyncNotification = @"kMXRoomInitialSyncNotificatio
                     mimeType:(NSString*)mimeType
                      caption:(NSString*)caption
                     location:(NSDictionary*)location
+                    duration:(NSNumber*)duration
                    localEcho:(MXEvent**)localEcho
                      success:(void (^)(NSString *eventId))success
                      failure:(void (^)(NSError *error))failure
 {
-    return [self sendFile:fileLocalURL mimeType:mimeType caption:caption location:location localEcho:localEcho success:success failure:failure keepActualFilename:YES];
+    return [self sendFile:fileLocalURL mimeType:mimeType caption:caption location:location duration:duration localEcho:localEcho success:success failure:failure keepActualFilename:YES];
 }
 
 - (MXHTTPOperation*)sendFile:(NSURL*)fileLocalURL
                     mimeType:(NSString*)mimeType
                      caption:(NSString*)caption
                     location:(NSDictionary*)location
+                    duration:(NSNumber*)duration
                    localEcho:(MXEvent**)localEcho
                      success:(void (^)(NSString *eventId))success
                      failure:(void (^)(NSError *error))failure
           keepActualFilename:(BOOL)keepActualName
 {
-    return [self sendFile:fileLocalURL msgType:kMXMessageTypeFile mimeType:mimeType caption:caption location:location localEcho:localEcho success:success failure:failure keepActualFilename:keepActualName];
+    return [self sendFile:fileLocalURL msgType:kMXMessageTypeFile mimeType:mimeType caption:caption location:location duration:duration localEcho:localEcho success:success failure:failure keepActualFilename:keepActualName];
 }
 
 - (MXHTTPOperation*)sendAudioFile:(NSURL*)fileLocalURL
                          mimeType:(NSString*)mimeType
                          location:(NSDictionary*)location
+                         duration:(NSNumber*)duration
                         localEcho:(MXEvent**)localEcho
                           success:(void (^)(NSString *eventId))success
                           failure:(void (^)(NSError *error))failure
                keepActualFilename:(BOOL)keepActualName
 {
-    return [self sendFile:fileLocalURL msgType:kMXMessageTypeAudio mimeType:mimeType caption:NULL location:location localEcho:localEcho success:success failure:failure keepActualFilename:keepActualName];
+    return [self sendFile:fileLocalURL msgType:kMXMessageTypeAudio mimeType:mimeType caption:NULL location:location duration:duration localEcho:localEcho success:success failure:failure keepActualFilename:keepActualName];
 }
 
 - (MXHTTPOperation*)sendFile:(NSURL*)fileLocalURL
@@ -1409,6 +1412,7 @@ NSString *const kMXRoomInitialSyncNotification = @"kMXRoomInitialSyncNotificatio
                     mimeType:(NSString*)mimeType
                      caption:(NSString*)caption
                     location:(NSDictionary*)location
+                    duration:(NSNumber*)duration
                    localEcho:(MXEvent**)localEcho
                      success:(void (^)(NSString *eventId))success
                      failure:(void (^)(NSError *error))failure

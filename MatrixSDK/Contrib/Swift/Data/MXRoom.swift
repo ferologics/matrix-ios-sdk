@@ -265,8 +265,8 @@ public extension MXRoom {
      - returns: a `MXHTTPOperation` instance.
      */
     
-    @nonobjc @discardableResult func sendFile(localURL: URL, mimeType: String, caption: String?, location: [AnyHashable:Any]?, localEcho: inout MXEvent?, completion: @escaping (_ response: MXResponse<String?>) -> Void) -> MXHTTPOperation {
-        return __sendFile(localURL, mimeType: mimeType, caption: caption, location: location, localEcho: &localEcho, success: currySuccess(completion), failure: curryFailure(completion))
+    @nonobjc @discardableResult func sendFile(localURL: URL, mimeType: String, caption: String?, location: [AnyHashable:Any]?, duration: NSNumber?, localEcho: inout MXEvent?, completion: @escaping (_ response: MXResponse<String?>) -> Void) -> MXHTTPOperation {
+        return __sendFile(localURL, mimeType: mimeType, caption: caption, location: location, duration: duration, localEcho: &localEcho, success: currySuccess(completion), failure: curryFailure(completion))
     }
     
     /**
@@ -293,8 +293,8 @@ public extension MXRoom {
      - returns: a `MXHTTPOperation` instance.
      */
     
-    @nonobjc @discardableResult func sendAudioFile(localURL: URL, mimeType: String, location: [AnyHashable:Any]?, localEcho: inout MXEvent?, completion: @escaping (_ response: MXResponse<String?>) -> Void) -> MXHTTPOperation {
-        return __sendAudioFile(localURL, mimeType: mimeType, location: location, localEcho: &localEcho, success: currySuccess(completion), failure: curryFailure(completion), keepActualFilename: false)
+    @nonobjc @discardableResult func sendAudioFile(localURL: URL, mimeType: String, location: [AnyHashable:Any]?, duration: NSNumber?, localEcho: inout MXEvent?, completion: @escaping (_ response: MXResponse<String?>) -> Void) -> MXHTTPOperation {
+        return __sendAudioFile(localURL, mimeType: mimeType, location: location, duration: duration, localEcho: &localEcho, success: currySuccess(completion), failure: curryFailure(completion), keepActualFilename: false)
     }
     
     /**

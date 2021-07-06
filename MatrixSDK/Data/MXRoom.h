@@ -446,6 +446,7 @@ FOUNDATION_EXPORT NSString *const kMXRoomDidFlushDataNotification;
                     mimeType:(NSString*)mimeType
                      caption:(NSString*)caption
                     location:(NSDictionary*)location
+                    duration:(NSNumber*)duration
                    localEcho:(MXEvent**)localEcho
                      success:(void (^)(NSString *eventId))success
                      failure:(void (^)(NSError *error))failure
@@ -458,6 +459,7 @@ FOUNDATION_EXPORT NSString *const kMXRoomDidFlushDataNotification;
                     mimeType:(NSString*)mimeType
                      caption:(NSString*)caption
                     location:(NSDictionary*)location
+                    duration:(NSNumber*)duration
                    localEcho:(MXEvent**)localEcho
                      success:(void (^)(NSString *eventId))success
                      failure:(void (^)(NSError *error))failure NS_REFINED_FOR_SWIFT;
@@ -478,6 +480,7 @@ FOUNDATION_EXPORT NSString *const kMXRoomDidFlushDataNotification;
 - (MXHTTPOperation*)sendAudioFile:(NSURL*)fileLocalURL
                          mimeType:(NSString*)mimeType
                          location:(NSDictionary*)location
+                         duration:(NSNumber*)duration
                         localEcho:(MXEvent**)localEcho
                           success:(void (^)(NSString *eventId))success
                           failure:(void (^)(NSError *error))failure
